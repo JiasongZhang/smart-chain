@@ -1,0 +1,117 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页,
+    {
+      "path": "pages/main/main",
+      "style": {
+        "navigationBarTitleText": "登录模板",
+        "navigationBarBackgroundColor": "#2465e7"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "智链登录",
+        "navigationBarBackgroundColor": "#2465e7"
+      }
+    },
+    {
+      "path":"pages/change_password/change_password",
+      "style": {
+        "navigationBarTitleText": "修改支付密码",
+        "navigationBarBackgroundColor": "#2465e7"
+      }
+    },
+     {
+      "path":"pages/personal_data/personal_data",
+      "style": {
+        "navigationBarTitleText": "个人资料",
+        "navigationBarBackgroundColor": "#2465e7"
+      }
+    },
+    {
+      "path":"pages/unsealing/unsealing",
+      "style": {
+        "navigationBarTitleText": "账号解封",
+        "navigationBarBackgroundColor": "#2465e7"
+      }
+    },
+    {
+      "path":"pages/real_name_verification/real_name_verification",
+      "style": {
+        "navigationBarTitleText": "实名认证",
+        "navigationBarBackgroundColor": "#2465e7"
+      }
+    },
+    {
+      "path": "pages/user/user",
+      "style": {
+        "navigationBarTitleText": "会员中心",
+        "navigationBarBackgroundColor": "#2465e7"
+      }
+    },
+    {
+      "path": "pages/suanli/suanli",
+      "style": {
+        "navigationBarTitleText": "智链算力",
+        "navigationBarBackgroundColor": "#2465e7"
+      }
+    },
+    {
+      "path": "pages/yingyong/yingyong",
+      "style": {
+        "navigationBarTitleText": "智链应用",
+        "navigationBarBackgroundColor": "#2465e7"
+      }
+    },
+    {
+      "path": "pages/shichang/shichang",
+      "style": {
+        "navigationBarTitleText": "智链市场",
+        "navigationBarBackgroundColor": "#2465e7"
+        // "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#2465e7",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "static/img/shouye_N.png",
+        "selectedIconPath": "static/img/shouye_Y.png"
+      },
+      {
+        "pagePath": "pages/suanli/suanli",
+        "text": "算力",
+        "iconPath": "static/img/suanli_N.png",
+        "selectedIconPath": "static/img/suanli_Y.png"
+      },
+      {
+        "pagePath": "pages/yingyong/yingyong",
+        "text": "应用",
+        "iconPath": "static/img/yingyong_N.png",
+        "selectedIconPath": "static/img/yingyong_Y.png"
+      },
+      {
+        "pagePath": "pages/shichang/shichang",
+        "text": "市场",
+        "iconPath": "static/img/shichang_N.png",
+        "selectedIconPath": "static/img/shichang_Y.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/img/wode_N.png",
+        "selectedIconPath": "static/img/wode_Y.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0faeff",
+    "backgroundColor": "#fbf9fe"
+  }
+}

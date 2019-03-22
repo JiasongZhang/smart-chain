@@ -1,0 +1,13 @@
+
+      !(function(){
+        var uniAppViewReadyCallback = function(){
+          setCssToHead(["body{background-color: #EFEFEF}\n.",[1],"liutu_a{ width: ",[0,52],"; height: ",[0,49],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_l{ width: ",[0,51],"; height: ",[0,31],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_b{ width: ",[0,50],"; height: ",[0,46],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_c{ width: ",[0,52],"; height: ",[0,52],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_d{ width: ",[0,50],"; height: ",[0,59],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_e{ width: ",[0,52],"; height: ",[0,44],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_f{ width: ",[0,59],"; height: ",[0,52],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_g{ width: ",[0,48],"; height: ",[0,48],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_h{ width: ",[0,52],"; height: ",[0,52],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_i{ width: ",[0,50],"; height: ",[0,48],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_j{ width: ",[0,47],"; height: ",[0,42],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"liutu_k{ width: ",[0,52],"; height: ",[0,42],"; margin-left: ",[0,26],"; margin-right: ",[0,32],"; }\n.",[1],"biao_list_a { border-bottom: 1px solid #b2b2b2; border-right:1px solid #b2b2b2 ; }\n.",[1],"biao_list_b { border-bottom: 1px solid #b2b2b2; }\n.",[1],"biao_list_ab { border-right:1px solid #b2b2b2 ; }\n.",[1],"suanli{ width: 100%; }\n.",[1],"biao{ background-color: #FFFFFF; width: 94.66%; margin: ",[0,27],"; padding: ",[0,14]," ",[0,0],"; border-radius: ",[0,10],"; }\n.",[1],"biao_list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }\n.",[1],"biao_list wx-view{ height: ",[0,128],"; width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: ",[0,32],"; color: #6a6a6a; }\n",],undefined,{path:"./pages/suanli/suanli.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/suanli/suanli.wxml') } }));
+        }
+        if(window.__uniAppViewReady__){
+          uniAppViewReadyCallback()
+        }else{
+          document.addEventListener('uniAppViewReady',uniAppViewReadyCallback)
+        }
+      })();
+      

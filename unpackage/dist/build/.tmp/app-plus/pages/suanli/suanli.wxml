@@ -1,0 +1,2 @@
+<import src="./suanli.vue.wxml" />
+    <template is="edfc3f60" data="{{ ...$root['0'], $root }}"/>

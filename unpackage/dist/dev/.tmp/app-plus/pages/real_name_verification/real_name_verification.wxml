@@ -1,0 +1,2 @@
+<import src="./real_name_verification.vue.wxml" />
+    <template is="e8e4dfe0" data="{{ ...$root['0'], $root }}"/>

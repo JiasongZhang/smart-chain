@@ -1,0 +1,2 @@
+<template name="52729ee0"><view bindtap="handleProxy" data-eventid="{{'52729ee0-1'}}" data-comkey="{{$k}}" class="_view 52729ee0">{{msag}}
+		我是应用32132<input value="{{data}}" bindinput="handleProxy" data-eventid="{{'52729ee0-0'}}" data-comkey="{{$k}}" class="_input 52729ee0" /></view></template>

@@ -1,0 +1,115 @@
+
+page{background-color: #EFEFEF}
+.liutu_a{
+    width: 52rpx;
+    height: 49rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_l{
+    width: 51rpx;
+    height: 31rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_b{
+    width: 50rpx;
+    height: 46rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_c{
+    width: 52rpx;
+    height: 52rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_d{
+    width: 50rpx;
+    height: 59rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_e{
+    width: 52rpx;
+    height: 44rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_f{
+    width: 59rpx;
+    height: 52rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_g{
+    width: 48rpx;
+    height: 48rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_h{
+    width: 52rpx;
+    height: 52rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_i{
+    width: 50rpx;
+    height: 48rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_j{
+    width: 47rpx;
+    height: 42rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.liutu_k{
+    width: 52rpx;
+    height: 42rpx;
+    margin-left: 26rpx;
+    margin-right: 32rpx;
+}
+.biao_list_a {
+    border-bottom: 1px solid #b2b2b2;
+    border-right:1px solid #b2b2b2 ;
+}
+.biao_list_b {
+    border-bottom: 1px solid #b2b2b2;
+}
+.biao_list_ab {
+    border-right:1px solid #b2b2b2 ;
+}
+.suanli{
+		width: 100%;
+}
+.biao{
+    background-color: #FFFFFF;
+    width: 94.66%;
+    margin: 27rpx;
+    padding: 14rpx 0rpx;
+    border-radius: 10rpx;
+}
+.biao_list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.biao_list view{
+    height: 128rpx;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 32rpx;
+    color: #6a6a6a;
+}
+

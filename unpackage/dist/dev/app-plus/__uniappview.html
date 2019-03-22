@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"智链","entryPagePath":"pages/main/main.html","page":{"pages/main/main.html":{"window":{"navigationBarTitleText":"登录模板","navigationBarBackgroundColor":"#2465e7"}},"pages/login/login.html":{"window":{"navigationBarTitleText":"智链登录","navigationBarBackgroundColor":"#2465e7"}},"pages/change_password/change_password.html":{"window":{"navigationBarTitleText":"修改支付密码","navigationBarBackgroundColor":"#2465e7"}},"pages/personal_data/personal_data.html":{"window":{"navigationBarTitleText":"个人资料","navigationBarBackgroundColor":"#2465e7"}},"pages/unsealing/unsealing.html":{"window":{"navigationBarTitleText":"账号解封","navigationBarBackgroundColor":"#2465e7"}},"pages/real_name_verification/real_name_verification.html":{"window":{"navigationBarTitleText":"实名认证","navigationBarBackgroundColor":"#2465e7"}},"pages/user/user.html":{"window":{"navigationBarTitleText":"会员中心","navigationBarBackgroundColor":"#2465e7"}},"pages/suanli/suanli.html":{"window":{"navigationBarTitleText":"智链算力","navigationBarBackgroundColor":"#2465e7"}},"pages/yingyong/yingyong.html":{"window":{"navigationBarTitleText":"应用","navigationBarBackgroundColor":"#2465e7"}},"pages/shichang/shichang.html":{"window":{"navigationBarTitleText":"我的","navigationBarBackgroundColor":"#2465e7"}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#0faeff","backgroundColor":"#fbf9fe"}},"tabBar":{"color":"#7a7e83","selectedColor":"#2465e7","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/main/main.html","text":"首页","iconPath":"static/img/shouye_N.png","selectedIconPath":"static/img/shouye_Y.png"},{"pagePath":"pages/suanli/suanli.html","text":"算力","iconPath":"static/img/suanli_N.png","selectedIconPath":"static/img/suanli_Y.png"},{"pagePath":"pages/yingyong/yingyong.html","text":"应用","iconPath":"static/img/yingyong_N.png","selectedIconPath":"static/img/yingyong_Y.png"},{"pagePath":"pages/shichang/shichang.html","text":"市场","iconPath":"static/img/shichang_N.png","selectedIconPath":"static/img/shichang_Y.png"},{"pagePath":"pages/user/user.html","text":"我的","iconPath":"static/img/wode_N.png","selectedIconPath":"static/img/wode_Y.png"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/main/main","pages/login/login","pages/change_password/change_password","pages/personal_data/personal_data","pages/unsealing/unsealing","pages/real_name_verification/real_name_verification","pages/user/user","pages/suanli/suanli","pages/yingyong/yingyong","pages/shichang/shichang"],"subPackages":[],"usingComponents":{},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false}}
+
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+            };
+
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

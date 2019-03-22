@@ -1,0 +1,2 @@
+<import src="./shichang.vue.wxml" />
+    <template is="4dcdcaa0" data="{{ ...$root['0'], $root }}"/>
