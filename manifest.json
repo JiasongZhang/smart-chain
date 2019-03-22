@@ -1,6 +1,6 @@
 {
     "name" : "智链",
-    "appid" : "__UNI__FA96908",
+    "appid" : "__UNI__E9A61D0",
     "description" : "登录模板",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -45,70 +45,70 @@
                 "ios" : {
                     "appstore" : "C:/Users/Administrator/Desktop/logo.png",
                     "ipad" : {
-                        "app" : "unpackage/res/icons/76x76.png",
-                        "app@2x" : "unpackage/res/icons/152x152.png",
-                        "notification" : "unpackage/res/icons/20x20.png",
-                        "notification@2x" : "unpackage/res/icons/40x40.png",
-                        "proapp@2x" : "unpackage/res/icons/167x167.png",
-                        "settings" : "unpackage/res/icons/29x29.png",
-                        "settings@2x" : "unpackage/res/icons/58x58.png",
-                        "spotlight" : "unpackage/res/icons/40x40.png",
-                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                        "app" : "C:/Users/Administrator/Desktop/logo.png",
+                        "app@2x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "notification" : "C:/Users/Administrator/Desktop/logo.png",
+                        "notification@2x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "proapp@2x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "settings" : "C:/Users/Administrator/Desktop/logo.png",
+                        "settings@2x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "spotlight" : "C:/Users/Administrator/Desktop/logo.png",
+                        "spotlight@2x" : "C:/Users/Administrator/Desktop/logo.png"
                     },
                     "iphone" : {
-                        "app@2x" : "unpackage/res/icons/120x120.png",
-                        "app@3x" : "unpackage/res/icons/180x180.png",
-                        "notification@2x" : "unpackage/res/icons/40x40.png",
-                        "notification@3x" : "unpackage/res/icons/60x60.png",
-                        "settings@2x" : "unpackage/res/icons/58x58.png",
-                        "settings@3x" : "unpackage/res/icons/87x87.png",
-                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
-                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                        "app@2x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "app@3x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "notification@2x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "notification@3x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "settings@2x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "settings@3x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "spotlight@2x" : "C:/Users/Administrator/Desktop/logo.png",
+                        "spotlight@3x" : "C:/Users/Administrator/Desktop/logo.png"
                     }
                 },
                 "android" : {
-                    "hdpi" : "unpackage/res/icons/72x72.png",
-                    "ldpi" : "unpackage/res/icons/48x48.png",
-                    "mdpi" : "unpackage/res/icons/48x48.png",
-                    "xhdpi" : "unpackage/res/icons/96x96.png",
-                    "xxhdpi" : "unpackage/res/icons/144x144.png",
-                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                    "hdpi" : "C:/Users/Administrator/Desktop/logo.png",
+                    "ldpi" : "C:/Users/Administrator/Desktop/logo.png",
+                    "mdpi" : "C:/Users/Administrator/Desktop/logo.png",
+                    "xhdpi" : "C:/Users/Administrator/Desktop/logo.png",
+                    "xxhdpi" : "C:/Users/Administrator/Desktop/logo.png",
+                    "xxxhdpi" : "C:/Users/Administrator/Desktop/logo.png"
                 }
             },
             "splashscreen" : {
                 "ios" : {
                     "iphone" : {
-                        "retina35" : "C:/Users/Administrator/Desktop/timg.png",
-                        "retina40" : "C:/Users/Administrator/Desktop/timg.png",
-                        "retina40l" : "C:/Users/Administrator/Desktop/timg.png",
-                        "retina47" : "C:/Users/Administrator/Desktop/timg.png",
-                        "retina47l" : "C:/Users/Administrator/Desktop/timg.png",
-                        "retina55" : "C:/Users/Administrator/Desktop/timg.png",
-                        "retina55l" : "C:/Users/Administrator/Desktop/timg.png",
-                        "iphonex" : "C:/Users/Administrator/Desktop/timg.png",
-                        "iphonexl" : "C:/Users/Administrator/Desktop/timg.png",
-                        "portrait-896h@2x" : "C:/Users/Administrator/Desktop/timg.png",
-                        "landscape-896h@2x" : "C:/Users/Administrator/Desktop/timg.png",
-                        "portrait-896h@3x" : "C:/Users/Administrator/Desktop/timg.png",
-                        "landscape-896h@3x" : "C:/Users/Administrator/Desktop/timg.png"
+                        "retina35" : "C:/Users/Administrator/Desktop/index.png",
+                        "retina40" : "C:/Users/Administrator/Desktop/index.png",
+                        "retina40l" : "C:/Users/Administrator/Desktop/index.png",
+                        "retina47" : "C:/Users/Administrator/Desktop/index.png",
+                        "retina47l" : "C:/Users/Administrator/Desktop/index.png",
+                        "retina55" : "C:/Users/Administrator/Desktop/index.png",
+                        "retina55l" : "C:/Users/Administrator/Desktop/index.png",
+                        "iphonex" : "C:/Users/Administrator/Desktop/index.png",
+                        "iphonexl" : "C:/Users/Administrator/Desktop/index.png",
+                        "portrait-896h@2x" : "C:/Users/Administrator/Desktop/index.png",
+                        "landscape-896h@2x" : "C:/Users/Administrator/Desktop/index.png",
+                        "portrait-896h@3x" : "C:/Users/Administrator/Desktop/index.png",
+                        "landscape-896h@3x" : "C:/Users/Administrator/Desktop/index.png"
                     },
                     "ipad" : {
-                        "portrait7" : "C:/Users/Administrator/Desktop/timg.png",
-                        "portrait-retina7" : "C:/Users/Administrator/Desktop/timg.png",
-                        "landscape7" : "C:/Users/Administrator/Desktop/timg.png",
-                        "landscape-retina7" : "C:/Users/Administrator/Desktop/timg.png",
-                        "portrait-1112h@2x" : "C:/Users/Administrator/Desktop/timg.png",
-                        "landscape-1112h@2x" : "C:/Users/Administrator/Desktop/timg.png",
-                        "portrait-1194h@2" : "C:/Users/Administrator/Desktop/timg.png",
-                        "landscape-1194h@2x" : "C:/Users/Administrator/Desktop/timg.png",
-                        "portrait-1366h@2x" : "C:/Users/Administrator/Desktop/timg.png",
-                        "landscape-1366h@2x" : "C:/Users/Administrator/Desktop/timg.png"
+                        "portrait7" : "C:/Users/Administrator/Desktop/index.png",
+                        "portrait-retina7" : "C:/Users/Administrator/Desktop/index.png",
+                        "landscape7" : "C:/Users/Administrator/Desktop/index.png",
+                        "landscape-retina7" : "C:/Users/Administrator/Desktop/index.png",
+                        "portrait-1112h@2x" : "C:/Users/Administrator/Desktop/index.png",
+                        "landscape-1112h@2x" : "C:/Users/Administrator/Desktop/index.png",
+                        "portrait-1194h@2" : "C:/Users/Administrator/Desktop/index.png",
+                        "landscape-1194h@2x" : "C:/Users/Administrator/Desktop/index.png",
+                        "portrait-1366h@2x" : "C:/Users/Administrator/Desktop/index.png",
+                        "landscape-1366h@2x" : "C:/Users/Administrator/Desktop/index.png"
                     }
                 },
                 "android" : {
-                    "hdpi" : "C:/Users/Administrator/Desktop/timg.png",
-                    "xhdpi" : "C:/Users/Administrator/Desktop/timg.png",
-                    "xxhdpi" : "C:/Users/Administrator/Desktop/timg.png"
+                    "hdpi" : "C:/Users/Administrator/Desktop/index.png",
+                    "xhdpi" : "C:/Users/Administrator/Desktop/index.png",
+                    "xxhdpi" : "C:/Users/Administrator/Desktop/index.png"
                 }
             }
         },

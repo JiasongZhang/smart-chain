@@ -9,12 +9,18 @@
     "pages/user/user",
     "pages/suanli/suanli",
     "pages/yingyong/yingyong",
-    "pages/shichang/shichang"
+    "pages/shichang/shichang",
+    "pages/transaction_order_operation/transaction_order_operation",
+    "pages/red_envelopes/red_envelopes",
+    "pages/exchange/exchange",
+    "pages/confirm_receipt/confirm_receipt",
+    "pages/forget/forget",
+    "pages/notice/notice",
+    "pages/notice_xiangqing/notice_xiangqing"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#0faeff",
     "backgroundColor": "#fbf9fe"
   },
   "usingComponents": {},

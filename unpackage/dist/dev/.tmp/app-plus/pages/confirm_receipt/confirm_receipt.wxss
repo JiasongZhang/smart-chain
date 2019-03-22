@@ -1,0 +1,60 @@
+
+.content{
+	width: 100%; 
+	overflow: hidden;
+	padding: 0;
+	background-color: #fff;
+}
+.state{
+	width: 92%;
+	margin: 0 auto;
+	height: 93rpx;
+	line-height: 93rpx;
+	font-size: 35rpx !important;
+	letter-spacing: 7rpx;
+	font-weight: 600;
+	color: #545454;
+}
+._hr{
+	color: #545454;
+}
+.queren{
+	width: 92%;
+	margin: 0 auto;
+	height: 160rpx;
+	margin-top: 30rpx;
+	font-size: 35rpx !important;
+	letter-spacing: 7rpx;
+	color:#303030;
+	font-weight: 600;
+}
+.shangchuan{
+	width: 92%;
+	margin: 0 auto;
+	color: #303030;
+	font-size: 25rpx;
+}
+.img{
+	float: left;
+	width: 300rpx;
+	height: 170rpx;
+	line-height: 170rpx;
+	background-color: #B2B2B2;
+	color: #fff;
+}
+.qure{
+	width: 500rpx;
+	height: 90rpx;
+	background-color: #5888E9;
+	color: #fff;
+	letter-spacing: 10rpx;
+	margin-top: 100rpx;
+}
+.input-row{
+	margin-top: 30rpx;
+	color: #717171;
+}
+/* m-input{
+	border: solid 2upx #000000;
+} */
+

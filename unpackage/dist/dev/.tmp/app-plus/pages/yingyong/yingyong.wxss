@@ -1,0 +1,120 @@
+
+.hangye{
+  margin-top: 30rpx;
+}
+.hang_list {
+  padding-left: 32rpx;
+  padding-right: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-size: 30rpx;
+  color: #303030;
+  margin-top: 10rpx;
+}
+.qiye_logo {
+  width: 106rpx;
+  height: 106rpx;
+  margin-left: 26rpx;
+  margin-right: 40rpx;
+  background-color: #2465e7;
+}
+.qiye_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20rpx;
+  border-bottom: 2rpx solid #aaaaaa;
+  padding-bottom: 20rpx;
+}
+.qiye_xinxi{
+  font-size: 28rpx;
+  color: #303030;
+}
+.ying_more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack:end;
+  -webkit-justify-content:flex-end;
+      -ms-flex-pack:end;
+          justify-content:flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28rpx;
+  color: #a1a1a1;
+  margin-top: 16rpx;
+}
+.ying_more image{
+  width: 32rpx;
+  height: 26rpx;
+  margin-left: 6rpx;
+  margin-right: 36rpx;
+}
+.yingyong_a_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 22rpx;
+}
+.yingyong_a_list_a_img {
+  width: 148rpx;
+  height: 148rpx;
+  background-color: #2465e7;
+  margin-bottom: 8rpx;
+}
+.yingyong_a_list .yingyong_a_list_a{
+  width: 25%;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30rpx;
+}
+.yingyong {
+  width: 100%;
+  background-color: #efefef;
+}
+.yingyong_a_title {
+  border-left: 4rpx solid #2465e7;
+  font-size: 32rpx;
+  color: #303030;
+  padding-left: 15rpx;
+}
+.yingyong_a {
+  width: 92%;
+  background-color: #FFFFFF;
+  border-radius: 15rpx;
+  margin: 20rpx auto;
+  padding: 15rpx;
+}
+
+

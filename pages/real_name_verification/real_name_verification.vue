@@ -7,8 +7,8 @@
 
 						<view class="input-row zhanghaolist">
 							<view class="left">用户名</view>
-							<view style="border-bottom: solid 2upx #C3C3C3;width: 70%;">
-								<m-input type="text" v-model="id" placeholder="ID" style="width: 100%;"></m-input>
+							<view style="border-bottom: solid 2upx #C3C3C3;width: 70%;" class="right">
+								<m-input type="text" v-model="id" placeholder="ID" style="width: 100%;padding-bottom: 6upx;"></m-input>
 							</view>
 							
 						</view>
@@ -16,35 +16,43 @@
 						<view class="input-row zhanghaolist">
 							<view class="left">真实性名</view>
 							<view style="border-bottom: solid 2upx #C3C3C3;width: 70%;">
-								<m-input type="text" v-model="name" placeholder="XXX" style="width: 100%;"></m-input>
+								<m-input type="text" v-model="name" placeholder="XXX" style="width: 100%;padding-bottom: 6upx;"></m-input>
 							</view>
 						</view>
 					
 						<view class="input-row zhanghaolist">
 							<view class="left">身份证</view>
 							<view style="border-bottom: solid 2upx #C3C3C3;width: 70%;">
-								<m-input type="text" v-model="id_number" id="id_number" placeholder="身份证号码" style="width: 100%;"></m-input>
+								<m-input type="text" v-model="id_number" id="id_number" placeholder="身份证号码" style="width: 100%;padding-bottom: 6upx;"></m-input>
 							</view>
 						</view>
 					
 						<view class="input-row zhanghaolist">
 							<view class="left">交易密码</view>
 							<view style="border-bottom: solid 2upx #C3C3C3;width: 70%;">
-								<m-input type="password" v-model="pwd" placeholder="设置6位数字的交易密码" style="width: 100%;"></m-input>
+								<m-input type="password" v-model="pwd" placeholder="设置6位数字的交易密码" style="width: 100%;padding-bottom: 6upx;"></m-input>
 							</view>
 						</view>
 					
 						<view class="input-row zhanghaolist">
 							<view class="left">支付宝账号</view>
 							<view style="border-bottom: solid 2upx #C3C3C3;width: 70%;">
-								<m-input type="text" v-model="zfb_id" max-length=6 placeholder="填写交易支付宝账号" style="width: 100%;"></m-input>
+								<m-input type="text" v-model="zfb_id" max-length=6 placeholder="填写交易支付宝账号" style="width: 100%;padding-bottom: 6upx;"></m-input>
 							</view>
 						</view>
+						
+						<view class="input-row zhanghaolist">
+							<view class="left" style="margin-top: 30upx;letter-spacing: 20upx;">支付宝<br />收款码</view>
+							<view style="border-bottom: solid 2upx #C3C3C3;width: 70%;">
+								<button @tap="asd" class="img">上传图片</button>
+							</view>
+						</view>
+						
 					</view>
 				
 				</view>
 				<p>注：认证后不能做修改，请填写自己真实信息</p>
-				<button @tap="smb()">提交</button>
+				<button @tap="smb()" class="sbm">提交</button>
     </view>
 </template>
 
@@ -66,6 +74,17 @@
 	             }
 	         },
 	         methods: {
+						 
+						 asd:function () {
+						 	uni.chooseImage({
+						 	    count: 1, //默认9
+						 	    sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+						 	    sourceType: ['album'], //从相册选择
+						 	    success: function (res) {
+						 	        console.log(JSON.stringify(res.tempFilePaths));
+						 	    }
+						 	});
+						 },
 	 					smb:function () {
 							
 							// console.log("提交")
@@ -108,13 +127,18 @@
 		
 	}
 	.zhanghaolist {
-	  margin-top: 35upx;
+	  margin-top: 40upx;
 	  /* border: 1px solid #5888e9; */
 	  font-size: 35upx !important; 
 	}
 	.zhanghaolist .left{
 		width: 30%;
+		color: #000000;
 		/* font-weight: 600; */
+	}
+	.right{
+		/* justify-content: center; */
+		/* margin-top: -6upx; */
 	}
 	.zhanghaolist view m-input{
 		/* width: 100%; */
@@ -126,7 +150,7 @@
 		margin-left: 3%;
 		padding-top: 10upx ;
 	}
-	button{
+	.sbm{
 		width: 45%;
 		height: 80upx;
 		line-height: 80upx;
@@ -134,5 +158,13 @@
 		letter-spacing: 10upx;
 		background-color: #5888E9;
 		margin-top: 200upx;
+	}
+	.img{
+		float: left;
+		width: 300upx;
+		height: 170upx;
+		line-height: 170upx;
+		background-color: #B2B2B2;
+		color: #fff;
 	}
 </style>

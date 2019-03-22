@@ -1,0 +1,25 @@
+
+.content{
+	width: 100%; 
+	overflow: hidden;
+	padding: 0;
+	background-color: #fff;
+}
+.list{
+	width: 100%;
+	border-bottom:solid 2rpx #EFEFEF;
+	text-align: center;
+	padding-top: 15rpx;
+	padding-bottom: 15rpx;
+	line-height: 60rpx;
+}
+.tex{
+	width: 85%;
+	padding-top: 30rpx;
+	margin: 0 auto;
+	text-indent: 2em;
+	font-size: 35rpx !important;
+	line-height: 50rpx;
+	letter-spacing: 5rpx;
+}
+

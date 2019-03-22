@@ -5,29 +5,29 @@
 				
 			<view class="sub">
 		
-				<view class="input-row zhanghaolist">
+				<!-- <view class="input-row zhanghaolist">
 			  <view class="left">真实性名</view>
 				<view style="border-bottom: solid 2upx #C3C3C3; width: 100%;">
 					<m-input type="text" v-model="name" placeholder="请输入" style="width: 100%;"></m-input>
 				</view>
-			</view>
+			</view> -->
 			
-			<view class="input-row zhanghaolist">
+			<!-- <view class="input-row zhanghaolist">
 			  <view class="left">手机号</view>
 				<view style="border-bottom: solid 2upx #C3C3C3;width: 100%;">
 					<m-input type="text" v-model="dianhua" placeholder="158XXXXXXX" style="100%"></m-input>
 				</view>
 			  
-			</view>
+			</view> -->
 			
-			<view class="input-row zhanghaolist">
+			<!-- <view class="input-row zhanghaolist">
 			  <view class="left">验证码</view>
 				<view style="border-bottom: solid 2upx #C3C3C3;width: 100%;" class="input-row">
 					<m-input type="text" v-model="code" id="id_number" placeholder="验证码" style="70%"></m-input>
 					<button @tap="getCode" :disabled="disabled">{{timeData}}</button>
 				</view>
 				
-			</view>
+			</view> -->
 			
 			<view class="input-row zhanghaolist">
 			  <view class="left">原密码</view>
@@ -42,11 +42,28 @@
 					<m-input type="password" v-model="new_pwd" max-length=6 placeholder="填写交易支付宝账号" style="width: 100%;"></m-input>
 				</view>
 			</view>
+			<!-- </view> -->
+			
+			<view class="input-row zhanghaolist">
+			  <view class="left">确认密码</view>
+				<view  style="border-bottom: solid 2upx #C3C3C3;width: 100%;">
+					<m-input type="password" v-model="qurren_pwd" placeholder="设置6位数字的交易密码" style="width: 100%;"></m-input>
+				</view>
 			</view>
+			
+			
+			
+		</view>
+		
 		
 		</view>
-		<button @tap="smb()" class="smb">提交</button>
+		<text class="wangji" @tap="wangji">忘记密码?</text>
+		<!-- <view> -->
+			<button @tap="smb()" class="smb">提交</button>
+		
+		
 	</view>
+	
 </template>
 
 <script>
@@ -64,6 +81,7 @@
 										 code:"",
 										 pwd:"",
 										 new_pwd:"",
+										 qurren_pwd:"",
 										 
 										 
 										 timeData:"获取验证码",
@@ -72,6 +90,13 @@
 		             }
 		         },
 		         methods: {
+							 //忘记密码
+							 wangji:function () {
+								 uni.navigateTo({
+								   url: '../forget/forget',
+								 });
+							 },
+							 
 							 
 							 getCode:function(){
 							 	var auth_timetimer =  setInterval(()=>{
@@ -124,12 +149,13 @@
 		
 	}
 	.zhanghaolist {
-	  margin-top: 35upx;
+	  margin-top: 40upx;
 	  /* border: 1px solid #5888e9; */
 	  font-size: 35upx !important; 
 	}
 	.zhanghaolist .left{
 		width: 30%;
+		color: #000000;
 		/* font-weight: 600; */
 	}
 	p{
@@ -158,5 +184,12 @@
 		letter-spacing: 10upx;
 		background-color: #5888E9;
 		margin-top: 200upx;
+	}
+	
+	.wangji{
+		text-align: right;
+		margin-right: 4%;
+		color: #303030;
+		font-size: 30upx
 	}
 </style>

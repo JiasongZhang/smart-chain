@@ -1,2 +1,2 @@
 <import src="./yingyong.vue.wxml" />
-    <template is="52729ee0" data="{{ ...$root['0'], $root }}"/>
+    <template is="ec43d22a" data="{{ ...$root['0'], $root }}"/>

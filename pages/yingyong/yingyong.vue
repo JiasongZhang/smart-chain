@@ -23,7 +23,7 @@
            <view class="yingyong_a_list_a_title">产品名称</view>
          </view>
        </view>
-       <view class="ying_more">更多<image src="../../static/img/more.png" ></image></view>
+       <!-- <view class="ying_more">更多<image src="../../static/img/more.png" ></image></view> -->
     </view>
     <!-- //合作企业 -->
     <view class="yingyong_a">
@@ -41,7 +41,7 @@
        
        
        
-       <view class="ying_more">更多<image src="../../static/img/more.png" ></image></view>
+       <!-- <view class="ying_more">更多<image src="../../static/img/more.png" ></image></view> -->
     </view>   
     <!-- //行业应用 -->
     
@@ -53,7 +53,7 @@
          <view class="hang_list">信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题</view>
          <view class="hang_list">信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题</view>
        </view>
-       <view class="ying_more">更多<image src="../../static/img/more.png" ></image></view>
+       <!-- <view class="ying_more">更多<image src="../../static/img/more.png" ></image></view> -->
     </view> 
     
     

@@ -1,0 +1,2 @@
+<import src="./confirm_receipt.vue.wxml" />
+    <template is="9e6749c2" data="{{ ...$root['0'], $root }}"/>

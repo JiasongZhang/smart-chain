@@ -6,7 +6,7 @@
     <view class="input-group">
       <view class="input-row border zhanghaolist">
         <image src="../../static/img/zhanghao.png"></image>
-        <m-input class="m-input" type="text" clearable focus v-model="account" placeholder="请输入账号"></m-input>
+        <m-input class="m-input" type="text" clearable focus v-model="account" placeholder="请输入手机号"></m-input>
       </view>
 
       <view class="input-row zhanghaolist">
@@ -15,28 +15,22 @@
         <button @tap="getCode" :disabled="disabled">{{timeData}}</button>
       </view>
 
-      <view class="input-row zhanghaolist">
+      <!-- <view class="input-row zhanghaolist">
         <image src="../../static/img/id.png"></image>
         <m-input type="text" v-model="password" placeholder="推荐人ID"></m-input>
-      </view>
+      </view> -->
     </view>
     <view class="btn-row">
       <button type="primary" class="primary" @tap="bindLogin">登录</button>
     </view>
-
-
     <p>智链联盟</p>
   </view>
 </template>
 
 <script>
   import service from '../../service.js';
-  import {
-    mapState,
-    mapMutations
-  } from 'vuex'
+  import { mapState , mapMutations } from 'vuex'
   import mInput from '../../components/m-input.vue'
-
   export default {
     components: {
       mInput
@@ -57,18 +51,54 @@
     methods: {
       getCode: function() {
         this.disabled = true
-        var auth_timetimer = setInterval(() => {
-          this.second--;
-          this.timeData = "重新获取(" + this.second + ")"
-          
-          if (this.second <= 0) {
-            this.sendAuthCode = true;
-            this.timeData = "获取验证码"
-            this.disabled = false
-            clearInterval(auth_timetimer);
-          }
-        }, 1000);
+        let that = this;
+        
+        //验证手机号
+        if(!(/^1[23456789]\d{9}$/.test(that.account))){ 
+            uni.showToast({
+            	 title: '请输入正确的手机号',
+            	icon:"none"
+            })
+            return false; 
+        } 
+        
+        uni.request({
+        	url: that.baseurl + '/service/users/smsCode',
+        	dataType: 'json', //默认 json格式
+        	data: {
+            mobile:that.account
+          },
+        	method: 'POST', //请求方式
+        	header: {
+        		'content-type': 'application/x-www-form-urlencoded',
+        	},
+        	success: (res) => {
+            console.log( res )
+            if( res.data.status == 0 ){
+               var auth_timetimer = setInterval(() => {
+                that.second--;
+                that.timeData = "重新获取(" + that.second + ")"
+                
+                if (that.second <= 0) {
+                  that.sendAuthCode = true;
+                  that.timeData = "获取验证码"
+                  that.disabled = false
+                  clearInterval(auth_timetimer);
+                }
+              }, 1000);
+            }
+            
+        	},
+        	fail: (error) => {
+        		console.log(error)
+        	}
+        })
+        
+        
+        
+       
       },
+      
       initPosition() {
         console.log("111")
         this.positionTop = uni.getSystemInfoSync().windowHeight - 100;

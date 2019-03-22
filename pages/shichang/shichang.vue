@@ -26,7 +26,7 @@
       <view class="shichangall_title">等待买入</view>
       <view class="shichangall_title_list">
         <view>数量</view>
-        <view>单位/美元</view>
+        <view>单位</view>
         <view>合计金额</view>
         <view>操作</view>
       </view>
@@ -37,7 +37,10 @@
         <view>{{item.mai}}</view>
       </view>
     </view>
-    <view :class="tablist[1].status? 'denglistnone':'shichangall'">
+    
+		
+		
+		<view :class="tablist[1].status? 'denglistnone':'shichangall'">
       <view class="shichangall_title">申请买入</view>
       <view class="shuliang">
         <text>申请数量</text>
@@ -48,7 +51,7 @@
         <view>120</view>
       </view>
       <view class="shenqing">
-        <button>确认申请</button>
+        <button @tap="ok">确认申请</button>
       </view>
 
       <view class="heng"></view>
@@ -62,7 +65,9 @@
           <view>状态</view>
           <view>操作</view>
         </view>
-        <view class="mairulieb_list">
+				
+				
+        <view class="mairulieb_list" @tap="mairu">
           <view class="mairulieb_lista">
             <view>02-13</view>
             <view>22:36:20</view>
@@ -73,9 +78,102 @@
           <view class="mairulieb_lista">完成</view>
           <view class="mairulieb_lista">操作</view>
         </view>
+				
+				
+				
       </view>
     </view>
+		
+		
+		
+		
+		
+		<!-- 合约区 -->
+		<view :class="tablist[3].status? 'denglistnone':'shichangall'">
+		  <view class="shichangall_title">申请买入</view>
+		  <view class="shuliang">
+		    <text>申请数量</text>
+		    <view @tap="xuanze">120</view>
+		  </view>
+		  <view class="shuliang shulianga">
+		    <text>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价</text>
+		    <view>120</view>
+		  </view>
+		  <view class="shenqing">
+		    <button @tap="ok">确认申请</button>
+		  </view>
+		
+		  <view class="heng"></view>
+		  <view class="shichangall_title">买入列表</view>
+		  <view class="mairulieb">
+		    <view class="mairulieb_title">
+		      <view>时间</view>
+		      <view>数量</view>
+		      <view>单价</view>
+		      <view>金额</view>
+		      <view>状态</view>
+		      <view>操作</view>
+		    </view>
+				
+				
+		    <view class="mairulieb_list" @tap="mairu">
+		      <view class="mairulieb_lista">
+		        <view>02-13</view>
+		        <view>22:36:20</view>
+		      </view>
+		      <view class="mairulieb_lista">100</view>
+		      <view class="mairulieb_lista">20.00</view>
+		      <view class="mairulieb_lista">2000</view>
+		      <view class="mairulieb_lista">完成</view>
+		      <view class="mairulieb_lista">操作</view>
+		    </view>
+				
+				
+				
+		  </view>
+		</view>
+		
+		
+		
+		
+		
+		
+		
+		
+		
     <view :class="tablist[2].status?'denglistnone':'shichangall'">
+			
+			<!-- <view class="heng"></view> -->
+			<view class="shichangall_title">买入列表</view>
+			<view class="mairulieb">
+			  <view class="mairulieb_title">
+			    <view>时间</view>
+			    <view>数量</view>
+			    <view>单价</view>
+			    <view>金额</view>
+			    <view>状态</view>
+			    <view>操作</view>
+			  </view>
+				
+				
+			  <view class="mairulieb_list">
+			    <view class="mairulieb_lista">
+			      <view>02-13</view>
+			      <view>22:36:20</view>
+			    </view>
+			    <view class="mairulieb_lista">100</view>
+			    <view class="mairulieb_lista">20.00</view>
+			    <view class="mairulieb_lista">2000</view>
+			    <view class="mairulieb_lista">完成</view>
+			    <view class="mairulieb_lista" @tap="shoukuan">收款</view>
+			  </view>
+				
+				
+				
+			</view>
+			<view class="heng"></view>
+			
+			
       <view class="shichangall_title">卖出列表</view>
       <view class="mairulieb">
         <view class="mairulieb_title">
@@ -86,7 +184,9 @@
           <view>状态</view>
           <view>操作</view>
         </view>
-        <view class="mairulieb_list">
+				
+				
+        <view class="mairulieb_list" @tap="mairu">
           <view class="mairulieb_lista">
             <view>02-13</view>
             <view>22:36:20</view>
@@ -97,6 +197,9 @@
           <view class="mairulieb_lista">完成</view>
           <view class="mairulieb_lista">操作</view>
         </view>
+				
+				
+				
       </view>
     </view>
   </view>
@@ -117,11 +220,14 @@
         }, {
           name: "卖出",
           status: false
+        }, {
+          name: "合约区",
+          status: false
         }],
         dengList: [{
           num: "18",
-          price: "10.00$",
-          money: "180$",
+          price: "10.00",
+          money: "180",
           mai: "卖出"
         }], //交易大厅数据列表
         changNum: [{//选择买入数量列表
@@ -153,6 +259,33 @@
       this.adddata()
     },
     methods: {
+			
+			//收款
+			shoukuan:function () {
+// 				uni.navigateTo({
+// 				  url:'../../confirm_receipt/confirm_receipt'
+// 				}); 
+// console.log("asd")
+				uni.navigateTo({
+				 url:'../confirm_receipt/confirm_receipt'
+				}); 
+			},
+			
+			//买入卖入
+			mairu:function () {
+				uni.navigateTo({
+				  url:'../exchange/exchange'
+				}); 
+			},
+			
+			
+			//确认申请
+			ok:function () {
+				uni.navigateTo({
+				  url:'../transaction_order_operation/transaction_order_operation'
+				}); 
+			},
+			
       //选择买入数量
       changenum: function(e) {
         for (let i = 0; i < this.changNum.length; i++) {

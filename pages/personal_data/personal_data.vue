@@ -99,16 +99,18 @@
 		
 	}
 	.zhanghaolist {
-	  margin-top: 35upx;
+	  margin-top: 40upx;
 	  /* border: 1px solid #5888e9; */
 	  font-size: 35upx !important; 
 	}
 	.zhanghaolist .left{
 		width: 30%;
+		color: #000000;
 		/* font-weight: 600; */
 	}
 	.zhanghaolist .right{
 		width: 70%;
+		/* justify-content: center; */
 		/* font-weight: 600; */
 	}
 	.img_img{

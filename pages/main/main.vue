@@ -1,46 +1,22 @@
 <template>
   <view class="content">
-    <!-- <view class="uni-padding-wrap"> -->
-    <!-- <view class="page-section swiper"> -->
-    <!-- <view class="page-section-spacing"> -->
     <view class="swiper_fa">
       <swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration"
         indicator-color="#fff" indicator-active-color="#A2A2A2">
-        <swiper-item>
-          <!-- <view class="swiper-item uni-bg-red">A</view> -->
-          <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image>
-        </swiper-item>
-        <swiper-item>
-          <!-- <view class="swiper-item uni-bg-green">B</view> -->
-          <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image>
-        </swiper-item>
-        <swiper-item>
-          <!-- <view class="swiper-item uni-bg-green">B</view> -->
-          <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image>
-        </swiper-item>
-        <swiper-item>
-          <!-- <view class="swiper-item uni-bg-green">B</view> -->
-          <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image>
-        </swiper-item>
-        <swiper-item>
-          <!-- <view class="swiper-item uni-bg-blue">C</view> -->
-          <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image>
+        <swiper-item  v-for='(item,index) in lunbotu' :key="index">
+          <image :src="item.img" mode="" style="width: 100%;height: 256upx;"></image>
         </swiper-item>
       </swiper>
     </view>
-
-
-
-
     <view class="shange">
       <ul>
         <li>
-          <image src="../../static/img/hongbao.png" mode=""></image>
-          <p>每日红包</p>
+          <image src="../../static/img/hongbao.png" mode="" @tap="red_en"></image>
+          <p @tap="red_en">每日红包</p>
         </li>
         <li>
-          <image src="../../static/img/pingtai.png" mode=""></image>
-          <p>平台公告</p>
+          <image src="../../static/img/pingtai.png" mode="" @click="gonggao"></image>
+          <p @click="gonggao">平台公告</p>
         </li>
         <li>
           <image src="../../static/img/tuiguang.png" mode=""></image>
@@ -59,80 +35,8 @@
       <view class="swiper_fa_text">
         <swiper class="swiper_text" :indicator-dots="indicatorDots_text" :autoplay="autoplay_text" :interval="interval_text"
           :duration="duration_text" vertical='true' circular='true'>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-red">A</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬梅成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-green">B</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马什么梅啊成功注册智链，领取500积分</text>
-          </swiper-item>
-          <swiper-item>
-            <!-- <view class="swiper-item uni-bg-blue">C</view> -->
-            <!-- <image src="../../static/img/lunbo.png" mode="" style="width: 100%;height: 256upx;"></image> -->
-            <text>恭喜马冬什么梅啊成功注册智链，领取500积分</text>
+          <swiper-item v-for='(ite,index) in go' :key="index">
+            <text>{{ ite.tex }}</text>
           </swiper-item>
         </swiper>
       </view>
@@ -193,42 +97,33 @@
         </view>
       </view>
     </view>
-    <!-- </view> -->
-    <!-- </view> -->
-    <!-- </view> -->
-    <!-- <view class="swiper-list">
-            <view class="uni-list-cell uni-list-cell-pd">
-                <view class="uni-list-cell-db">指示点</view>
-                <switch :checked="indicatorDots" @change="changeIndicatorDots" />
-            </view>
-            <view class="uni-list-cell uni-list-cell-pd">
-                <view class="uni-list-cell-db">自动播放</view>
-                <switch :checked="autoplay" @change="changeAutoplay" />
-            </view>
-        </view>
-        <view class="uni-padding-wrap">
-            <view class="uni-common-mt">
-                <text>幻灯片切换时长(ms)</text>
-                <text class="info">{{duration}}</text>
-            </view>
-            <slider @change="durationChange" :value="duration" min="500" max="2000" />
-            <view class="uni-common-mt">
-                <text>自动播放间隔时长(ms)</text>
-                <text class="info">{{interval}}</text>
-            </view>
-            <slider @change="intervalChange" :value="interval" min="2000" max="10000" />
-        </view> -->
   </view>
 </template>
 
 <script>
   import service from '../../service.js';
   import mInput from '../../components/m-input.vue';
-  import md5 from 'md5';
+
   export default {
     data() {
       return {
-        // background: ['color1', 'color2', 'color3'],
+				lunbotu:[
+					{img:"../../static/img/lunbo.png"},
+					{img:"../../static/img/lunbo.png"},
+					{img:"../../static/img/lunbo.png"},
+					{img:"../../static/img/lunbo.png"},
+					{img:"../../static/img/lunbo.png"}
+				],
+				go:[
+					{tex:"恭喜马冬梅成功注册智链，领取500积分"},
+					{tex:"恭喜马冬梅成功注册智链，领取500积分"},
+					{tex:"恭喜马冬梅成功注册智链，领取500积分"},
+					{tex:"恭喜马冬梅成功注册智链，领取500积分"},
+					{tex:"恭喜马冬梅成功注册智链，领取500积分"},
+					{tex:"恭喜马冬梅成功注册智链，领取500积分"},
+					{tex:"恭喜马冬梅成功注册智链，领取500积分"},
+					{tex:"恭喜马冬梅成功注册智链，领取500积分"}
+				],
         indicatorDots: true,
         autoplay: true,
         interval: 4000,
@@ -242,21 +137,33 @@
       }
     },
     created() {
-      console.log(md5('123456'))
+			
+    	uni.getStorage({
+          key: 'storage_key',
+          data: 'hello',
+          success: function (res) {
+            console.log( res.username )
+              console.log('success');
+              if( res.username == undefined ){
+                uni.reLaunch({
+                   url: '../login/login',
+                })
+              }
+          }
+      })
     },
     methods: {
-      //         changeIndicatorDots(e) {
-      //             this.indicatorDots = !this.indicatorDots
-      //         },
-      //         changeAutoplay(e) {
-      //             this.autoplay = !this.autoplay
-      //         },
-      //         intervalChange(e) {
-      //             this.interval = e.target.value
-      //         },
-      //         durationChange(e) {
-      //             this.duration = e.target.value
-      //         }
+			//公告
+			gonggao:function () {
+				uni.navigateTo({
+				  url: '../notice/notice',
+				});
+			},
+			red_en:function () {
+				uni.navigateTo({
+				  url: '../red_envelopes/red_envelopes',
+				});
+			}
     }
   }
 </script>
@@ -281,11 +188,6 @@
   .swiper-item {
     border-radius: 30upx;
   }
-
-  /* .swiper-item image{
-		width: 100%;
-		height: 136upx;
-	} */
   .shange {
     width: 92%;
     margin: 0 auto;
@@ -356,12 +258,6 @@
     font-size: 30upx;
     letter-spacing: 4upx;
   }
-
-
-
-
-
-
   .yingyong {
     width: 92%;
     margin: 0 auto;
@@ -401,8 +297,6 @@
   }
 
   .main_zhong_list_a {
-    /* background-color: #2465e7; */
-    /* color: #FFFFFF; */
     text-align: center;
     width: 100%;
     height: 188upx;
@@ -411,7 +305,6 @@
     justify-content: center;
     flex-direction: column;
     font-size: 30upx;
-    /* margin-right: 20upx; */
   }
 
   .main_zhong_list_a image {

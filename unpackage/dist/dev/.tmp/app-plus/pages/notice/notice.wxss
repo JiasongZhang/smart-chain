@@ -1,0 +1,22 @@
+
+.content{
+	width: 100%; 
+	overflow: hidden;
+	padding: 0;
+	background-color: #fff;
+}
+.list{
+	width: 100%;
+	margin: 0 auto;
+	text-indent: 2em;
+	padding-top: 20rpx;
+	padding-bottom: 10rpx;
+	border-bottom: 2rpx solid #EFEFEF;
+}
+.a{
+		font-size: 45rpx !important;
+}
+.b{
+		font-size: 35rpx !important;
+}
+
